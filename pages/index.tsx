@@ -19,10 +19,10 @@ const Home: NextPage = () => {
           Learn <a href="https://nextjs.org">Next.js!</a>
         </h1> */}
 
-        <h1>
+        <h1 className='p-24 pb-6 font-bold text-center text-7xl text-bold'>
           Read{' '}
           <Link href="/posts/first-post">
-            <a>this page!</a>
+            <a className='text-blue-600'>this page!</a>
           </Link>
         </h1>
 
@@ -31,7 +31,7 @@ const Home: NextPage = () => {
           <code >pages/index.tsx</code>
         </p>
 
-        <div>
+        <div className='grid grid-cols-2 grid-rows-2 gap-6 m-40'>
           <a href="https://nextjs.org/docs">
             <h2>Documentation &rarr;</h2>
             <p>Find in-depth information about Next.js features and API.</p>
