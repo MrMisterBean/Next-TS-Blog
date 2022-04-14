@@ -31,25 +31,25 @@ const Home: NextPage = () => {
           <code className='p-2 text-xl rounded-lg bg-neutral-50' >pages/index.tsx</code>
         </p>
 
-        <div className='grid grid-cols-2 grid-rows-2 gap-6 m-40'>
-          <a href="https://nextjs.org/docs">
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
+        <div className='grid-container'>
+          <a className='grid-item' href="https://nextjs.org/docs">
+            <h2 className='grid-item-header'>Documentation &rarr;</h2>
+            <p className='grid-item-content'>Find in-depth information about Next.js features and API.</p>
           </a>
 
-          <a href="https://nextjs.org/learn">
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+          <a className='grid-item' href="https://nextjs.org/learn">
+            <h2 className='grid-item-header'>Learn &rarr;</h2>
+            <p className='grid-item-content'>Learn about Next.js in an interactive course with quizzes!</p>
           </a>
 
-          <a href="https://github.com/vercel/next.js/tree/canary/examples">
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+          <a className='grid-item' href="https://github.com/vercel/next.js/tree/canary/examples">
+            <h2 className='grid-item-header'>Examples &rarr;</h2>
+            <p className='grid-item-content'>Discover and deploy boilerplate example Next.js projects.</p>
           </a>
 
-          <a href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app">
-            <h2>Deploy &rarr;</h2>
-            <p>
+          <a className='grid-item' href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app">
+            <h2 className='grid-item-header'>Deploy &rarr;</h2>
+            <p className='grid-item-content'>
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>

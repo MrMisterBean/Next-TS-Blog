@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .grid-container {
+    @apply grid grid-cols-2 grid-rows-2 gap-8 py-20 mx-52;
+  }
+  .grid-item {
+    @apply px-4 py-8 border-2 border-gray-100 shadow-sm rounded-xl;
+  }
+  .grid-item-header {
+    @apply text-3xl font-extrabold text-gray-900;
+  }
+  .grid-item-content {
+    @apply pt-6 text-2xl text-gray-900;
+  }
+}
