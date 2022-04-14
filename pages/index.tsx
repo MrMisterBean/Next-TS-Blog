@@ -56,7 +56,7 @@ const Home: NextPage = () => {
         </div>
       </main>
 
-      <footer>
+      <footer className='fixed inset-x-0 bottom-0 w-full h-24 p-8 text-lg font-semibold text-center bg-white border-t shadow-2xl'>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
