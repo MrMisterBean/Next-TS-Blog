@@ -26,9 +26,9 @@ const Home: NextPage = () => {
           </Link>
         </h1>
 
-        <p>
+        <p className='text-2xl font-semibold text-center font-'>
           Get started by editing{' '}
-          <code >pages/index.tsx</code>
+          <code className='p-2 text-xl rounded-lg bg-neutral-50' >pages/index.tsx</code>
         </p>
 
         <div className='grid grid-cols-2 grid-rows-2 gap-6 m-40'>
