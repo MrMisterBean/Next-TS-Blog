@@ -16,6 +16,11 @@ const FirstPost = () => {
         }
       />
       <h1 className='text-3xl'>First Post</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+        voluptatem, doloremque, quia quibusdam quisquam dolorum, quidem
+        voluptatibus, quam doloremque quisquam.
+      </p>
     </Layout>
   )
 }

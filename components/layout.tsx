@@ -32,16 +32,14 @@ const Layout = ({ children, home }: Props) => {
         {home ? (
           <>
             <Image
+              className='rounded-full'
               priority
               src='/images/profile.jpg'
               height={582 / 4}
               width={808 / 7}
               alt={name}
             />
-            <h1>{name}</h1>
-            <Link href='posts/first-post'>
-              <a> First post! </a>
-            </Link>
+            <h1 className='text-5xl font-bold'>{name}</h1>
           </>
         ) : (
           <>
@@ -61,17 +59,22 @@ const Layout = ({ children, home }: Props) => {
                 <a>{name}</a>
               </Link>
             </div>
-            {/* <p>{home} "home" false?</p> */}
           </>
         )}
       </header>
       <main>{children}</main>
-      {!home && (
+      {!home ? (
         <div>
           <Link href='/'>
             <a>Back to home</a>
           </Link>
         </div>
+      ) : (
+        <Link href='posts/first-post'>
+          <div className='text-center'>
+            <a className='w-full text-3xl text-blue-600'> First post! &rarr;</a>
+          </div>
+        </Link>
       )}
     </div>
   )
