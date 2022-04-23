@@ -15,12 +15,14 @@ const FirstPost = () => {
           console.log('script loaded crorectly, window.FB has been populated')
         }
       />
-      <h1 className='text-3xl'>First Post</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-        voluptatem, doloremque, quia quibusdam quisquam dolorum, quidem
-        voluptatibus, quam doloremque quisquam.
-      </p>
+      <h1 className='pt-12 text-4xl font-bold text-center'>First Post</h1>
+      <section className='flex justify-center'>
+        <p className='flex flex-col gap-4 max-w-[40%] min-w-[42rem] py-6 text-2xl text-left'>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          voluptatem, doloremque, quia quibusdam quisquam dolorum, quidem
+          voluptatibus, quam doloremque quisquam.
+        </p>
+      </section>
     </Layout>
   )
 }

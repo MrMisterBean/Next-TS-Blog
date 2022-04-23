@@ -46,6 +46,7 @@ const Layout = ({ children, home }: Props) => {
             <Link href='/'>
               <a>
                 <Image
+                  className='rounded-full'
                   priority
                   src='/images/profile.jpg'
                   height={582 / 4}
@@ -56,24 +57,24 @@ const Layout = ({ children, home }: Props) => {
             </Link>
             <div>
               <Link href='/'>
-                <a>{name}</a>
+                <a className='text-5xl font-bold'>{name}</a>
               </Link>
             </div>
           </>
         )}
       </header>
-      <main>{children}</main>
+      <main className=''>{children}</main>
       {!home ? (
-        <div>
-          <Link href='/'>
-            <a>Back to home</a>
-          </Link>
-        </div>
+        <Link href='/'>
+          <a className='block text-3xl text-center text-blue-600'>
+            Back to home! &rarr;
+          </a>
+        </Link>
       ) : (
         <Link href='posts/first-post'>
-          <div className='text-center'>
-            <a className='w-full text-3xl text-blue-600'> First post! &rarr;</a>
-          </div>
+          <a className='block text-3xl text-center text-blue-600'>
+            First post! &rarr;
+          </a>
         </Link>
       )}
     </div>
